@@ -11,7 +11,7 @@ powerSub$datetime <- strptime(paste(powerSub$Date, powerSub$Time), format="%d/%m
 png(filename = "plot1.png", width=480, height=480)
 
 #create histogram
-Hist1 <- hist(as.numeric(powerSub$Global_active_power), breaks=12, col= "red", main = "Global Active Power", xlab="Global Active Power (kilowatts")
+Hist1 <- hist(as.numeric(powerSub$Global_active_power), breaks=12, col= "red", main = "Global Active Power", xlab="Global Active Power (kilowatts)")
 
 #don't forget to close dev.off
 dev.off()
